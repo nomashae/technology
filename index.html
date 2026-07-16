@@ -431,14 +431,14 @@
       </div>
       <div class="jips-card">
         <div class="jips-top">
-          <div class="jips-logo"><span>Ji</span></div>
+          <div class="jips-logo"><span>Har</span></div>
           <div>
-            <div class="jips-name">Jips</div>
+            <div class="jips-name">Harmony</div>
             <div class="jips-tagline">The official programming language of the Republic of Nomashae</div>
           </div>
         </div>
         <div class="jips-body">
-          <p class="jips-desc">Jips is being developed by the Ministry of Technology as Nomashae's own programming language. Details about its syntax, purpose, and use cases will be revealed when the time comes. For now — watch this space.</p>
+          <p class="jips-desc">Harmony Lang is being developed by the Ministry of Technology as Nomashae's own programming language. Details about its syntax, purpose, and use cases will be revealed when the time comes. For now look at the preview.</p>
 
           <!-- fake code preview -->
           <div class="jips-terminal">
@@ -446,19 +446,28 @@
               <div class="t-dot red"></div>
               <div class="t-dot yellow"></div>
               <div class="t-dot green"></div>
-              <span class="t-label">preview.jips</span>
+              <span class="t-label">preview.harm</span>
             </div>
             <div class="terminal-code">
-              <span class="t-comment">// Jips — coming soon</span><br>
+              <span class="t-comment">// Harmony Lang - coming soon</span><br>
               <span class="t-comment">// The GUI focused language</span><br>
-              <span class="t-comment">// Still in planning</span><br><br>
-              <span class="t-keyword">window</span> <span class="t-var">Hello</span> {<br>
-              &nbsp;&nbsp;<span class="t-func">ttext</span>(<span class="t-string">"Four Elements · One Nomashae"</span>)<br>
-              &nbsp;&nbsp;<span class="t-func">parButton</span>(<span class="t-string">"See national anthem"</span>, <span class="t-var">displayAnthem</span>)<br>
-              }<br>
+              <span class="t-comment">// Coming Very Soon</span><br><br>
+              <span class="t-keyword">store</span> <span class="t-var">CounterStore</span>:<br>
+              &nbsp;&nbsp;<span class="t-keyword">state</span><span class="t-var"> count</span>: <span class="t-type">Int</span> = <span class="t-number">0</span><br><br>
+              &nbsp;&nbsp;<span class="t-keyword">action</span> <span class="t-var">increment</span>:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-var">count</span> += <span class="t-number">1</span><br><br>
+              <span class="t-keyword">component</span> <span class="t-var">CounterApp</span>:<br>
+              &nbsp;&nbsp;<span class="t-keyword">bind</span> <span class="t-var">count</span> <span class="t-keyword">from</span> <span class="t-var">CounterStore</span>.<span class="t-var">count</span><br><br>
+              &nbsp;&nbsp;<span class="t-keyword">layout</span>:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Column(padding: <span class="t-number">16</span>, spacing: <span class="t-number">12</span>):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text(text: <span class="t-string">"Count: {count}"</span>, style: <span class="t-string">"heading"</span>)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Button(label: <span class="t-string">"+"</span>, on_click: <span class="t-keyword">emit</span> <span class="t-var">CounterStore</span>.<span class="t-var">increment</span>)<br><br>
+              <span class="t-keyword">app</span> <span class="t-var">CounterDemo</span>:<br>
+              &nbsp;&nbsp;<span class="t-keyword">window</span>(title: <span class="t-string">"Counter"</span>, width: <span class="t-number">320</span>, height: <span class="t-number">200</span>):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="t-keyword">mount</span> <span class="t-var">CounterApp</span>
             </div>
           </div>
-          <span class="jips-soon-badge"><i class="fa-solid fa-calendar"></i>&nbsp; In Planning</span>
+          <span class="jips-soon-badge"><i class="fa-solid fa-check"></i>&nbsp; Finishing</span>
         </div>
       </div>
     </div>
